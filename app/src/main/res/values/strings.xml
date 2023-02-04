@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MIT App</string>
+    <string name="usuario">Usuario</string>
+    <string name="pwd">Contraseña</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="mis_tarjetas">Mis tarjetas</string>
+    <string name="pagar">Pagar</string>
+    <string name="mis_movimientos">Mis movimientos</string>
+    <string name="card_added_message">Nueva Tarjeta Agregada</string>
+    <string name="close_sesion">Cerrar Sesión</string>
+
+</resources>

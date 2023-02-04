@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_layout"
+        android:padding="10dp">
+
+        <!--        Tarjeta configurada-->
+
+        <TextView
+            android:id="@+id/txt_tarjeta_configurada"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alata"
+            android:text=" Pagadas con: Tarjeta configurada xxxxxxxx"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--        Tarjeta destinatario-->
+        <TextView
+            android:id="@+id/txt_tarjeta_destinatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/alata"
+            android:text="Tarjeta destinatario xxxxxxxx"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_tarjeta_configurada" />
+        <!--        Nombre destinatario-->
+        <TextView
+            android:id="@+id/txt_nombre_destinatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/alata"
+            android:text="Nombre destinatario"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_tarjeta_destinatario" />
+
+        <!--        Motivo de pago-->
+        <TextView
+            android:id="@+id/txt_concepto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/alata"
+            android:text="Concepto: ...."
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_nombre_destinatario" />
+        <!-- fecha-->
+        <TextView
+            android:id="@+id/txt_fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/alata"
+            android:text="Fecha: 23-01-22"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_concepto" />
+        <!-- ubicacion-->
+        <TextView
+            android:id="@+id/txt_ubicacion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/alata"
+            android:text="Ubicacion: 23-01-22"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_fecha"
+            app:layout_constraintTop_toBottomOf="@id/txt_concepto" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
